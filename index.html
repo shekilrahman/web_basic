@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Full Name Display</title>
+</head>
+<body>
+
+    <form id="nameForm">
+        <label for="firstName">First Name:</label><br>
+        <input type="text" id="firstName" name="firstName"><br>
+        <label for="lastName">Last Name:</label><br>
+        <input type="text" id="lastName" name="lastName"><br><br>
+        <input type="button" value="Submit" id="submitBtn">
+    </form>
+
+    <h2>Full Name:</h2>
+    <div id="fullNameDisplay"></div>
+
+    <script>
+        document.getElementById('submitBtn').addEventListener('click', function() {
+            var firstName = document.getElementById('firstName').value;
+            var lastName = document.getElementById('lastName').value;
+            var fullName = firstName + ' ' + lastName;
+            document.getElementById('fullNameDisplay').innerText = fullName;
+        });
+    </script>
+
+</body>
+</html>
