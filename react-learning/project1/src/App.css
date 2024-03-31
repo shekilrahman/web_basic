@@ -1,0 +1,20 @@
+body{
+  background-color: darkslategrey;
+  color: beige;
+}
+
+#main{
+  background-color: azure;
+  color: black;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  width: max-content;
+}
+.Square{
+    width: 100px;
+    height: 100px;
+    font-size: 80px;
+    margin: 0px;
+}
+
